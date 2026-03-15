@@ -2,7 +2,7 @@ import './App.css'
 import emblemImg from './assets/emblem.png'
 import signatureImg from './assets/signature.png'
 import portraitStandingImg from './assets/portrait_standing.png'
-import portraitTarotImg from './assets/portrait_tarot.png'
+import portraitTarotImg from './assets/portrait_tarot.jpg'
 
 function App() {
   return (
