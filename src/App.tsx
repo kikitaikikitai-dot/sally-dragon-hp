@@ -11,6 +11,7 @@ function App() {
             <div className="logo">SALLY DRAGON</div>
             <ul className="nav-links">
               <li><a href="#about">Provenance</a></li>
+              <li><a href="#gallery">Ritual</a></li>
               <li><a href="#services">Sanctuary</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
@@ -22,6 +23,7 @@ function App() {
         <section className="hero">
           <div className="container">
             <div className="hero-content">
+              <img src="/emblem.png" alt="Sally Dragon Emblem" className="emblem-img" />
               <span className="accent-text">Sacred Sanctuary of the Dragon</span>
               <h1>聖龍の隠れ家、<br />再誕の刻。</h1>
               <p className="hero-p">
@@ -50,25 +52,36 @@ function App() {
                   「口の堅い」プロフェッショナルたちが最後に行き着く、<br />
                   静寂と知性に満ちた中世魔術師の書斎へ。
                 </p>
+                <img src="/signature.png" alt="Sally Dragon Signature" className="signature-img" />
               </div>
-              <div className="about-visual" style={{ 
-                height: '500px', 
-                background: 'rgba(var(--clr-accent-rgb), 0.05)', 
-                border: '1px solid rgba(var(--clr-accent-rgb), 0.2)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '5rem',
-                color: 'rgba(var(--clr-accent-rgb), 0.1)',
-                fontFamily: 'var(--font-display)'
-              }}>
-                龍
+              <div className="about-visual">
+                <div className="portrait-container">
+                  <img src="/portrait_standing.png" alt="Sally Dragon Portrait" className="portrait-img" />
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="services" className="section" style={{ background: 'var(--clr-secondary)' }}>
+        <section id="gallery" className="section" style={{ paddingBottom: '0' }}>
+          <div className="container">
+            <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: '4rem' }}>
+              <div className="portrait-container" style={{ height: '700px' }}>
+                <img src="/portrait_tarot.png" alt="Sally Dragon Tarot Session" className="portrait-img" />
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <h3 style={{ fontSize: '2.5rem', color: 'var(--clr-accent)', marginBottom: '1.5rem', fontFamily: 'var(--font-display)' }}>The Ritual</h3>
+                <p style={{ opacity: 0.7, fontSize: '1.1rem' }}>
+                  対面、そしてオンライン。<br />
+                  100種を超すカードと霊視が織りなす「儀式」は、<br />
+                  あなたの運命の深層を静かに映し出します。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="services" className="section">
           <div className="container">
             <h2 className="section-title">Sanctuary Services</h2>
             <div className="service-grid">
