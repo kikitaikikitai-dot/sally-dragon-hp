@@ -1,4 +1,8 @@
 import './App.css'
+import emblemImg from './assets/emblem.png'
+import signatureImg from './assets/signature.png'
+import portraitStandingImg from './assets/portrait_standing.png'
+import portraitTarotImg from './assets/portrait_tarot.png'
 
 function App() {
   return (
@@ -23,7 +27,7 @@ function App() {
         <section className="hero">
           <div className="container">
             <div className="hero-content">
-              <img src="/emblem.png" alt="Sally Dragon Emblem" className="emblem-img" />
+              <img src={emblemImg} alt="Sally Dragon Emblem" className="emblem-img" />
               <span className="accent-text">Sacred Sanctuary of the Dragon</span>
               <h1>聖龍の隠れ家、<br />再誕の刻。</h1>
               <p className="hero-p">
@@ -52,11 +56,11 @@ function App() {
                   「口の堅い」プロフェッショナルたちが最後に行き着く、<br />
                   静寂と知性に満ちた中世魔術師の書斎へ。
                 </p>
-                <img src="/signature.png" alt="Sally Dragon Signature" className="signature-img" />
+                <img src={signatureImg} alt="Sally Dragon Signature" className="signature-img" />
               </div>
               <div className="about-visual">
                 <div className="portrait-container">
-                  <img src="/portrait_standing.png" alt="Sally Dragon Portrait" className="portrait-img" />
+                  <img src={portraitStandingImg} alt="Sally Dragon Portrait" className="portrait-img" />
                 </div>
               </div>
             </div>
@@ -67,7 +71,7 @@ function App() {
           <div className="container">
             <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: '4rem' }}>
               <div className="portrait-container" style={{ height: '700px' }}>
-                <img src="/portrait_tarot.png" alt="Sally Dragon Tarot Session" className="portrait-img" />
+                <img src={portraitTarotImg} alt="Sally Dragon Tarot Session" className="portrait-img" />
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                 <h3 style={{ fontSize: '2.5rem', color: 'var(--clr-accent)', marginBottom: '1.5rem', fontFamily: 'var(--font-display)' }}>The Ritual</h3>
